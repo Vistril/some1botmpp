@@ -1,5 +1,7 @@
 var Client = require('./Client.js');
 var gClient = new Client();
+gClient.setChannel('lobby');
+gClient.start();
 gClient.send = (msg) => {
     gClient.sendArray([
         {
