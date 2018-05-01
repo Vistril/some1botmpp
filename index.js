@@ -1,5 +1,5 @@
 var Client = require('./Client.js');
-var gClient = new Client();
+var gClient = new Client('ws://multiplayerpiano.com:8080');
 gClient.setChannel('lobby');
 gClient.start();
 gClient.send = (msg) => {
